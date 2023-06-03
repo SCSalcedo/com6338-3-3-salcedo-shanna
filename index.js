@@ -1,3 +1,28 @@
+function startQuiz () {
+    var questions = [
+        "You wake up ready to start the day",
+        "You work well with others" ,
+        "You are happy with life",
+        "You like to push yourself to learn new thing",
+        "You don't get upset easily"
+    ]
+    var trueAnswers = 0 
+    for (var i = 0; i < questions.length; i++)
+     {
+        var answer = confirm(questions[i]);
+ 
+        if (answer) {
+            trueAnswers++
+        }
+    }
+    if (trueAnswers >= 3) {
+        alert("You are an optimist!")
+    }
+    else {
+        alert("You are a pessimist.")
+    }
+}
+
 /*
 Create a "start" button in the HTML that will call
 the function you write in this file (It should say "start").
